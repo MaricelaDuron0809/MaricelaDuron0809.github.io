@@ -28,8 +28,9 @@ function compChoices() {
   
   //define game function
   function game(playerChoice) {
-   console.log(playerChoice);
-  }
+  // console.log(playerChoice);
+  let computerChoice = compChoices();
+  console.log("player" + playerChoice);
+  console.log("computer" + computerChoice);
+}
   
-
-
