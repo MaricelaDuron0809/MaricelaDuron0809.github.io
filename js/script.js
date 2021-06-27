@@ -1,3 +1,7 @@
+let r = $(".rock");
+let p = $(".paper");
+let s = $(".scissor");
+
 
 //event listener for clicked button
 $( ".rock" ).click(function() {
@@ -30,7 +34,13 @@ function compChoices() {
   function game(playerChoice) {
   // console.log(playerChoice);
   let computerChoice = compChoices();
-  console.log("player" + playerChoice);
-  console.log("computer" + computerChoice);
+  //console.log("player" + playerChoice);
+  //console.log("computer" + computerChoice);
+//if and else statements for winning, losing and tie
+
+
+
+
+
 }
   
