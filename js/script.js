@@ -1,6 +1,9 @@
 let r = $(".rock");
 let p = $(".paper");
 let s = $(".scissor");
+//console.log(r);
+//console.log(p);
+//console.log(s);
 
 
 //event listener for clicked button
@@ -27,16 +30,25 @@ function compChoices() {
   const choices = ["rock", "paper", "scissor"];
   let randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
-  console.log(compChoices());
+  //console.log(compChoices());
   }
   
   //define game function
   function game(playerChoice) {
-  // console.log(playerChoice);
+   //console.log(playerChoice);
   let computerChoice = compChoices();
-  //console.log("player" + playerChoice);
-  //console.log("computer" + computerChoice);
+  console.log("player--" + playerChoice);
+  console.log("computer--" + computerChoice);
+
 //if and else statements for winning, losing and tie
+const winner = function(playerChoice, computerChoice) {
+  if (playerChoice === "r"  ||  compChoice === "s"){
+  console.log(r);
+  }
+}
+
+
+
 
 
 
