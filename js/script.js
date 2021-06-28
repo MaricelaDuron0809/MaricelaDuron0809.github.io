@@ -1,4 +1,11 @@
 
+let result = $('.result')
+let score  = $('.score')
+let scoreboard ={
+  player: 0,
+  Saturn: 0
+};
+
 
 
 //event listener for clicked button
@@ -17,7 +24,7 @@ $( ".rock" ).click(function() {
     //if player clicks rock give an argument of "scissor".
     game("scissor")
   });
-  
+
   //computer random choice
  //math.random returns num between 0-1
  //math.floor will round up number
@@ -75,11 +82,12 @@ if(playerChoice === "scissor") {
     }
   }
 }
-
-
 }
 console.log("Player " + playerChoice);
-console.log("Saturn " + computerChoice);
+console.log("Saturn " + computerChoice)
+//start score function
 score(playerChoice, computerChoice)
 
   }
+
+  //display result
