@@ -1,9 +1,4 @@
-let r = $(".rock");
-let p = $(".paper");
-let s = $(".scissor");
-//console.log(r);
-//console.log(p);
-//console.log(s);
+
 
 
 //event listener for clicked button
@@ -37,22 +32,37 @@ function compChoices() {
   function game(playerChoice) {
    //console.log(playerChoice);
   let computerChoice = compChoices();
-  console.log("player--" + playerChoice);
-  console.log("computer--" + computerChoice);
+ // console.log("player--" + playerChoice);
+  //console.log("Saturn--" + computerChoice);
 
-//if and else statements for winning, losing and tie
+//nested if and else statements for winning, losing and tie
 const winner = function(playerChoice, computerChoice) {
-  if (playerChoice === "r"  ||  compChoice === "s"){
-  console.log(r);
+  if(playerChoice === computerChoice) {
+    alert('ITS A TIE!');
   }
 }
-
-
-
-
-
-
-
+if(playerChoice === "rock") {
+  if(computerChoice === "scissors"){
+    alert('YOU WIN!');
+  } else {
+    alert("SATURN WINS");
+  }
+}
+if(playerChoice === "paper") {
+  if(computerChoice === "rock"){
+    alert('YOU WIN!');
+  } else {
+    alert('SATURN WINS!');
+  }
+}
+if(playerChoice === "scissor") {
+  if(computerChoice === "paper"){
+    alert('YOU WIN');
+  } else{
+    alert('SATURN WINS!')
+  }
+}
+console.log("player:" + playerChoice);
+console.log("Saturn:" + computerChoice);
 
 }
-  
