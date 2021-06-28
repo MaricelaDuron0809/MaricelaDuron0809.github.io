@@ -37,6 +37,7 @@ function compChoices() {
 
 //nested if and else statements for winning, losing and tie
 const score = function(playerChoice, computerChoice) {
+  //rock scores
   if(playerChoice === "rock") {
     if(computerChoice === "scissor"){
       alert('YOU WIN');
@@ -48,6 +49,34 @@ const score = function(playerChoice, computerChoice) {
       }
     }
   }
+
+//paper scores
+if(playerChoice === "paper") {
+  if(computerChoice === "rock"){
+    alert('YOU WIN');
+  }else if(playerChoice === "paper"){
+    if(computerChoice === "scissor"){
+      alert('SATURN WINS');
+    }else if(playerChoice === computerChoice){
+      alert('TIE');
+    }
+  }
+}
+
+//scissors scores
+if(playerChoice === "scissor") {
+  if(computerChoice === "paper"){
+    alert('YOU WIN');
+  }else if(playerChoice === "scissor"){
+    if(computerChoice === "rock"){
+      alert('SATURN WINS');
+    }else if(playerChoice === computerChoice){
+      alert('TIE');
+    }
+  }
+}
+
+
 }
 console.log("Player " + playerChoice);
 console.log("Saturn " + computerChoice);
