@@ -1,58 +1,62 @@
+//dsplay player and Saturn(computer) choice
+const saturnChoiceDisplay = document.getElementById("computer-choice");
+const playerChoiceDisplay = document.getElementById("player-choice");
+const resultDisplay = document.getElementById("result");
+let result
 
-let result = $('.result')
-let score  = $('.score')
-let scoreboard ={
-  player: 0,
-  Saturn: 0
-};
+//console.log(saturnChoiceDisplay);
+//console.log(playerChoiceDisplay);
+//console.log(result);
 
 
 
 //event listener for clicked button
 $( ".rock" ).click(function() {
-    playerChoice = "rock";
-   //if player clicks rock give an argument of "rock".
+    playerChoice = "Rock";
+//if player clicks rock give an argument of "rock".
    game("rock")
   });
   $( ".paper" ).click(function() {
-      playerChoice = "paper";
+      playerChoice = "Paper";
     //if player clicks rock give an argument of "paper".
     game("paper")
   });
-  $( ".scissor" ).click(function() {
-      playerChoice = "scissor";
-    //if player clicks rock give an argument of "scissor".
-    game("scissor")
+  $( ".scissors" ).click(function() {
+      playerChoice = "Scissors";
+    //if player clicks rock give an argument of "scissors".
+    game("scissors")
   });
 
-  //computer random choice
+//define computer random choice
  //math.random returns num between 0-1
  //math.floor will round up number
-function compChoices() {
-  const choices = ["rock", "paper", "scissor"];
+function saturnChoice() {
+  const choices = ["rock", "paper", "scissors"];
   let randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
-  //console.log(compChoices());
+//console.log(saturnChoice());
+ 
   }
   
   //define game function
   function game(playerChoice) {
    //console.log(playerChoice);
-  let computerChoice = compChoices();
+  let computerChoice = saturnChoice();
  // console.log("player--" + playerChoice);
   //console.log("Saturn--" + computerChoice);
-
+  
 //nested if and else statements for winning, losing and tie
 const score = function(playerChoice, computerChoice) {
+ 
   //rock scores
   if(playerChoice === "rock") {
-    if(computerChoice === "scissor"){
-      alert('YOU WIN');
+    if(computerChoice === "scissors"){
+      result = 'you win!';
     }else if(playerChoice === "rock"){
       if(computerChoice === "paper"){
-        alert('SATURN WINS');
+        result = 'you lose!';
       }else if(playerChoice === computerChoice){
-        alert('TIE');
+        result = 'TIE!';
       }
     }
   }
@@ -60,25 +64,24 @@ const score = function(playerChoice, computerChoice) {
 //paper scores
 if(playerChoice === "paper") {
   if(computerChoice === "rock"){
-    alert('YOU WIN');
+    result = 'you win!';
   }else if(playerChoice === "paper"){
-    if(computerChoice === "scissor"){
-      alert('SATURN WINS');
+    if(computerChoice === "scissors"){
+      result = 'you lose!';
     }else if(playerChoice === computerChoice){
-      alert('TIE');
+      result = 'TIE!';
     }
   }
 }
-
 //scissors scores
-if(playerChoice === "scissor") {
+if(playerChoice === "scissors") {
   if(computerChoice === "paper"){
-    alert('YOU WIN');
-  }else if(playerChoice === "scissor"){
+    result = 'you win!';
+  }else if(playerChoice === "scissors"){
     if(computerChoice === "rock"){
-      alert('SATURN WINS');
+      result = 'you lose!';
     }else if(playerChoice === computerChoice){
-      alert('TIE');
+      result = 'TIE!';
     }
   }
 }
@@ -88,6 +91,10 @@ console.log("Saturn " + computerChoice)
 //start score function
 score(playerChoice, computerChoice)
 
+//display player and saturns choice & results 
+playerChoiceDisplay.innerHTML = playerChoice
+saturnChoiceDisplay.innerHTML = computerChoice
+resultDisplay.innerHTML = result
   }
 
-  //display result
+
