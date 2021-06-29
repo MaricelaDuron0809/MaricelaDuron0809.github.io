@@ -3,10 +3,14 @@ const saturnChoiceDisplay = document.getElementById("computer-choice");
 const playerChoiceDisplay = document.getElementById("player-choice");
 const resultDisplay = document.getElementById("result");
 let result
-
 //console.log(saturnChoiceDisplay);
 //console.log(playerChoiceDisplay);
 //console.log(result);
+
+//round count
+let round = 0;
+const roundNumber = document.getElementById("rounds");
+//console.log(roundNumber);
 
 
 
@@ -95,6 +99,10 @@ score(playerChoice, computerChoice)
 playerChoiceDisplay.innerHTML = playerChoice
 saturnChoiceDisplay.innerHTML = computerChoice
 resultDisplay.innerHTML = result
+//round count 
+round++;
+roundNumber.innerHTML = round
+  
+
+
   }
-
-
