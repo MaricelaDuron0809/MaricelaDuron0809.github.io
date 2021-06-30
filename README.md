@@ -1,27 +1,33 @@
 # Rock-Paper-Scissor-Saturn-edition
 First project
-player vs computer
-player has the option of selecting rock, paper or scissor.
-game has 9 rounds
-player with highest score(5) is the winner
-the game will display players choice
-reset to start new game 
-
-LOGIC
-each option(rock paper scissor) will have an icon
-player can click icon of preference 
+player vs Saturn
+1)player has the option of selecting(clicking) rock, paper or scissors.
+2)game has 3 rounds //need to work on this
+3)player with highest score is the final winner//need to work on this
+4)reset to start new game//need to work on this
+5)game will have win or lose state
+6)results will be displayed per round
 
 
 "LOOKS"(display board)
-player options and choice will display center of screen
-ROUND# will be displayed top center of screen
-Score box will displayed top-left-corner
-cursor will change color when icons are hoovered over?
-when icon is clicked a few things will happen:
-*if player chooses rock- rock image will explode
-*if player chooses paper- paper turns into dust
-*if player chooses scissor- scissor cuts into ice?
-background-image or video of Saturns ring 
+1)player choice will be displayed
+2)saturn choice will be displayed
+3)ROUND# will be displayed top center of screen
+4)Score box will displayed top-left-corner//need to work on this
+5)cursor will change to pointer when clicking icon
+6)when icon is clicked a few things will happen://animation with jQuery is limited
+*if player chooses rock- rock image will explode-fade
+*if player chooses paper- paper turns into dust-slideUp
+*if player chooses scissor- scissor- slideToggle
+7)background-image will be Saturn
+8)icons will be in the center with transparent background
+
+
+future add ons:
+music- space noise
+thanos snap effect?
+explotions when losing?
+
 
 
 
