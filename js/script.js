@@ -37,6 +37,11 @@ $( ".rock" ).click(function() {
     $(this).hide('slow');
     $(this).show('slow');
   });
+//reset button
+$(".reset" ).click(function() {
+//need function
+})
+  
 
 //define computer random choice
  //math.random returns num between 0-1
@@ -92,10 +97,11 @@ if(playerChoice === "scissors") {
     if(computerChoice === "rock"){
       result = 'YOU LOSE 💥';
     }else if(playerChoice === computerChoice){
-      result = result = 'TIE 😆';
+      result = 'TIE 😆';
     }
   }
 }
+
 }
 console.log("Player " + playerChoice);
 console.log("Saturn " + computerChoice)
@@ -111,3 +117,6 @@ round++;
 roundNumber.innerHTML = round
 }
 
+//reset function
+//score-board
+//set game to 3 rounds-player with 2 wins is champion
