@@ -19,16 +19,23 @@ $( ".rock" ).click(function() {
     playerChoice = "Rock";
 //if player clicks rock give an argument of "rock".
    game("rock")
+   $(this).fadeOut('slow');
+   $(this).fadeIn('slow');
+
   });
   $( ".paper" ).click(function() {
       playerChoice = "Paper";
     //if player clicks rock give an argument of "paper".
     game("paper")
+    $(this).slideUp('slow');
+    $(this).slideDown('slow');
   });
   $( ".scissors" ).click(function() {
       playerChoice = "Scissors";
     //if player clicks rock give an argument of "scissors".
     game("scissors")
+    $(this).hide('slow');
+    $(this).show('slow');
   });
 
 //define computer random choice
@@ -103,3 +110,4 @@ resultDisplay.innerHTML = result
 round++;
 roundNumber.innerHTML = round
 }
+

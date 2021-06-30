@@ -10,13 +10,11 @@ font-family: 'Space Mono', monospace;
 
 }
 
-
-
-
-.dispaly{
-  border-radius: 10px;
-    
+.choices{
+  text-align:center;
 }
+
+
 
 .rock {
   display:inline-block;
@@ -28,6 +26,7 @@ font-family: 'Space Mono', monospace;
   cursor:pointer;
   background:  rgba(255, 255, 255, 0.2);
   color: black;
+ 
 
 }
 
