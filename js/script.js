@@ -62,12 +62,12 @@ const score = function(playerChoice, computerChoice) {
   //rock scores
   if(playerChoice === "rock") {
     if(computerChoice === "scissors"){
-      result = 'you win!';
+      result = 'YOU WIN 🌟';
     }else if(playerChoice === "rock"){
       if(computerChoice === "paper"){
-        result = 'you lose!';
+        result = 'YOU LOSE 💥';
       }else if(playerChoice === computerChoice){
-        result = 'TIE!';
+        result = 'TIE 😆';
       }
     }
   }
@@ -75,24 +75,24 @@ const score = function(playerChoice, computerChoice) {
 //paper scores
 if(playerChoice === "paper") {
   if(computerChoice === "rock"){
-    result = 'you win!';
+    result = 'YOU WIN 🌟';
   }else if(playerChoice === "paper"){
     if(computerChoice === "scissors"){
-      result = 'you lose!';
+      result = 'YOU LOSE 💥';
     }else if(playerChoice === computerChoice){
-      result = 'TIE!';
+      result = 'TIE 😆';
     }
   }
 }
 //scissors scores
 if(playerChoice === "scissors") {
   if(computerChoice === "paper"){
-    result = 'you win!';
+    result = 'YOU WIN 🌟';
   }else if(playerChoice === "scissors"){
     if(computerChoice === "rock"){
-      result = 'you lose!';
+      result = 'YOU LOSE 💥';
     }else if(playerChoice === computerChoice){
-      result = 'TIE!';
+      result = result = 'TIE 😆';
     }
   }
 }
