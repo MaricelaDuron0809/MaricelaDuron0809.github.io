@@ -1,4 +1,4 @@
-# Rock-Paper-Scissor-Saturn-edition
+# Rock, Paper, Scissors Saturn Edition
 First project
 player vs Saturn
 1)player has the option of selecting(clicking) rock, paper or scissors.- event listener for clicked button
