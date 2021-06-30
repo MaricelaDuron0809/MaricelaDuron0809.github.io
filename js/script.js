@@ -102,7 +102,4 @@ resultDisplay.innerHTML = result
 //round count 
 round++;
 roundNumber.innerHTML = round
-  
-
-
-  }
+}

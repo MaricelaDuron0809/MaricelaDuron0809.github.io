@@ -1,7 +1,55 @@
-h1{
-    color: teal;
+html{
+  background-image: url("https://images.theconversation.com/files/290468/original/file-20190902-175668-1b5jt8o.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&h=412&fit=crop&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+h1, h2, h3 {
+color: burlywood;
+font-family: 'Space Mono', monospace;
+
+}
+
+
+
+
 .dispaly{
   border-radius: 10px;
     
+}
+
+.rock {
+  display:inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size:200px;
+  cursor:pointer;
+  background:  rgba(255, 255, 255, 0.2);
+  color: black;
+
+}
+
+.paper {
+  display:inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 200px;
+  cursor:pointer;
+  background:  rgba(255, 255, 255, 0.2);
+  color: black;
+}
+.scissors{
+  display:inline-block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 200px;
+  cursor:pointer;
+  background:  rgba(255, 255, 255, 0.2);
+  color: black;
 }
