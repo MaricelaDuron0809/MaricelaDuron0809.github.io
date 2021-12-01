@@ -25,8 +25,8 @@ player vs Saturn
 
 future add ons:
 music- space noise
-thanos snap effect?
-explotions when losing?
+thanos snap effect
+explotions when losing
 
 
 
